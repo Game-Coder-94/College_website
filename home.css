@@ -50,9 +50,9 @@ body {
 
 .sidebar ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .sidebar ul li {
-    margin: 20px 0;
+    margin: 30px 0;
 }
