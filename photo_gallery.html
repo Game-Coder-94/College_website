@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo_gallery.css">
+    <script src="photo_gallery.js"></script>
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <div class="topbar">
+        <img src="data/college_logo.jpg" alt="Logo">
+        <h1>St. Vincent Pallotti College of Engineering and Technology</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_college copy.html">About College</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Online Result</a></li>
+                <li><a href="#">Exam Timetable</a></li>
+                <li><a href="#">Photo Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Photo Gallery</h2>
+            <div class="row">
+                <div class="column">
+                  <img src="data/college_logo.jpg" alt="Nature" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="data/college_photo.jpg" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="data/college_logo.jpg" alt="Mountains" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="data/college_photo.jpg" alt="Lights" onclick="myFunction(this);">
+                </div>
+              </div>
+              
+              <!-- The expanding image container -->
+              <div class="img_container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
