@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let loader = document.getElementById("loader"); // Corrected selector
+            let minTime = 2000; // 2 seconds
+    
+            let startTime = Date.now();
+    
+            window.addEventListener("load", function () {
+                let elapsedTime = Date.now() - startTime;
+                let remainingTime = minTime - elapsedTime;
+    
+                setTimeout(() => {
+                    loader.classList.add("fade-out"); // Now correctly references #loader
+                }, remainingTime > 0 ? remainingTime : 0);
+            });
+        });
+    </script>
     <title>Home</title>
 </head>
 <body>
@@ -15,7 +33,7 @@
         <div class="sidebar">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="about_college copy.html">About College</a></li>
+                <li><a href="about_college.html">About College</a></li>
                 <li><a href="mission.html">Mission</a></li>
                 <li><a href="departments.html">Departments</a></li>
                 <li><a href="#">Courses</a></li>
@@ -32,6 +50,16 @@
             <p>St. Vincent Pallotti College of Engineering and Technology was established in 2004 by the Nagpur Pallottine Society. The College is accredited by NAAC with A grade. The College is affiliated to Nagpur University approved by Director of Technical Education, Mumbai and AICTE, Government of India.</p>
         </div>
     </div>
+    
+    <!-- Loader -->
+    <!-- From Uiverse.io by terenceodonoghue --> 
+    <div class="loader" id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>        
+
 </body>                            
 </html>
                                                                                                                                            
