@@ -39,7 +39,6 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 99;
 }
 
 .side-bar div {
@@ -64,7 +63,6 @@ body {
 .side-bar a:hover {
     background-color: #0082fc;
     margin: 0px;
-    z-index: 99;
 }
 
 .container {
