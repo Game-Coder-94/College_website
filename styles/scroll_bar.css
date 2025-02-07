@@ -1,0 +1,22 @@
+/* Full-page scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Slim and modern */
+}
+
+/* Track (background behind scrollbar) */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 50, 0.1); /* Transparent dark blue */
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 123, 255, 0.7); /* Semi-transparent blue */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 123, 255, 1); /* Solid blue on hover */
+}

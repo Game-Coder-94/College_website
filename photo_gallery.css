@@ -30,13 +30,6 @@ body {
     width: 100%;
 }
 
-.sidebar {
-    width: 20%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
 .main {
     width: 80%;
     padding: 20px;
@@ -46,15 +39,6 @@ body {
 
 .main h2{
     text-decoration: underline;
-}
-
-.sidebar ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-.sidebar ul li {
-    margin: 30px 0;
 }
 
 /* The grid: Four equal columns that floats next to each other */
