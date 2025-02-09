@@ -1,12 +1,27 @@
-function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
+function myFunction(img) {
+    var container = document.querySelector(".img_container");
+    var expandedImg = document.getElementById("expandedImg");
     var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
+
+    expandedImg.src = img.src;
+    imgText.innerHTML = img.alt;
+
+    // Ensure display is set to block before animation
+    container.style.display = "block";
+    setTimeout(() => {
+        container.classList.remove("hide");
+        container.classList.add("show");
+    }, 10); // Small delay to allow transition
 }
+
+document.querySelector(".closebtn").addEventListener("click", function() {
+    var container = document.querySelector(".img_container");
+
+    container.classList.remove("show");
+    container.classList.add("hide");
+
+    // Delay hiding the div completely after animation
+    setTimeout(() => {
+        container.style.display = "none";
+    }, 300);
+});

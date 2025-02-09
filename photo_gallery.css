@@ -1,91 +1,121 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 10px 20px;
-}
-
-.topbar img {
-    height: 40px;
-    margin-right: 15px;
-    border-radius: 50%;
-}
-
-.topbar h1 {
-    margin: 0;
-    font-size: 24px;
-    flex-grow: 1;
-    text-align: center;
-}
-
+/* Main Content */
 .container {
+    margin: 0;
+    padding: 20px;
+    padding-left: 120px; /* Pushes content right due to sidebar */
+    padding-top: 70px; /* Pushes content down due to top bar */
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height */
+    width: 100vw; /* Ensures full width */
+    box-sizing: border-box;
+    background: url('data/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .main {
-    width: 80%;
+    max-width: 900px;
+    width: 100%;
     padding: 20px;
-    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.main h2{
-    text-decoration: underline;
+/* Photo Gallery Grid */
+/* Photo Gallery Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    justify-content: center; /* Center images */
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/* Image Card */
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
-  
-/* Style the images inside the grid */
+
+/* Images inside grid */
 .column img {
-    opacity: 0.8;
-    cursor: pointer;
+    width: auto; /* Dynamic width based on image */
+    height: 200px; /* Fixed height */
+    max-width: 100%; /* Prevents overflow */
+    object-fit: cover; /* Ensures proper cropping */
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
-  
-.column img:hover {
-    opacity: 1;
+
+/* Hover Effect */
+.column:hover {
+    transform: scale(1.05);
 }
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-/* The expanding image container (positioning is needed to position the close button and the text) */
+
+/* Image Container - Initially Hidden */
 .img_container {
-    position: relative;
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-  
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
+
+/* Show Animation */
+.img_container.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
-  
-/* Closable button inside the image */
+
+/* Close Animation */
+.img_container.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Close Button */
 .closebtn {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
+    top: 5px;
+    right: 10px;
+    font-size: 22px;
     cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: red;
 }
