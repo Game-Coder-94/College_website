@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Results</title>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/scroll_bar.css">
+    <link rel="stylesheet" href="styles/side_bar.css">
+    <link rel="stylesheet" href="online_result.css">
+    <script src="scripts/loader.js"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="sidebar">
+        <a href="home.html"><span class="icon">🏠</span><span class="label">Home</span></a>
+        <a href="about_college.html"><span class="icon">🎓</span><span class="label">About College</span></a>
+        <a href="mission.html"><span class="icon">🎯</span><span class="label">Mission</span></a>
+        <a href="departments.html"><span class="icon">🏢</span><span class="label">Departments</span></a>
+        <a href="#"><span class="icon">📖</span><span class="label">Courses</span></a>
+        <a href="facilities.html"><span class="icon">🏛️</span><span class="label">Facilities</span></a>
+        <a href="#"><span class="icon">📊</span><span class="label">Online Result</span></a>
+        <a href="time_table.html"><span class="icon">🗓️</span><span class="label">Exam Timetable</span></a>
+        <a href="photo_gallery.html"><span class="icon">📷</span><span class="label">Photo Gallery</span></a>
+        <a href="contact_us.html"><span class="icon">📞</span><span class="label">Contact Us</span></a>
+    </div>
+
+    
+    <div class="container" id="content">
+        <div class="header">
+            <h1>Online Results</h1>
+        </div>
+        
+        <div class="search-box">
+            <h2>Check Your Result</h2>
+            <form>
+                <label for="exam-type">Select Exam Type:</label>
+                <select id="exam-type">
+                    <option value="mid_sem">Mid Sem Examination</option>
+                    <option value="end_sem">End Sem Examination</option>
+                </select>
+                
+                <label for="roll-number">Enter Roll Number:</label>
+                <input type="text" id="roll-number" placeholder="Enter Roll Number">
+                
+                <button type="submit">View Result</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

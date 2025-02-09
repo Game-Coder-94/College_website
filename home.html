@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="home.css">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            let loader = document.getElementById("loader"); // Corrected selector
+            let loader = document.getElementById("loader"); // Get the loader
             let minTime = 2000; // 2 seconds
+    
+            // Hide page content initially
+            document.body.classList.add("loading");
     
             let startTime = Date.now();
     
@@ -17,12 +20,13 @@
                 let remainingTime = minTime - elapsedTime;
     
                 setTimeout(() => {
-                    loader.classList.add("fade-out"); // Now correctly references #loader
+                    loader.classList.add("fade-out"); // Fade out loader
+                    document.body.classList.remove("loading"); // Show content
                 }, remainingTime > 0 ? remainingTime : 0);
             });
         });
     </script>
-    <title>Home</title>
+        <title>Home</title>
 </head>
 <body>
     <div class="topbar">
