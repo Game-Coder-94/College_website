@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 80px;
 }
 
 /* Container */
@@ -26,7 +27,7 @@ body {
 /* Scrolling Header */
 marquee h2 {
     font-size: 20px;
-    color: #007bff;
+    color: white;
     padding: 10px;
 }
 
@@ -44,25 +45,46 @@ marquee h2 {
     margin-top: 20px;
 }
 
+.sec1_title {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .sec1 h3 {
     font-size: 20px;
-    color: #333;
+    color: white;
     text-align: center;
-    margin-bottom: 10px;
+}
+
+.sec1 h5 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
 }
 
 /* Card Grid */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(3, auto); /* Exactly 3 cards per row */
+    gap: 25px;
     justify-items: center;
-    margin-top: 10px;
+    margin: 15px 0px 15px;
 }
 
 /* Card */
 .card {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
+    width: 300px; /* Fixed card width */
+    height: 120px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     padding: 20px;
     text-align: center;

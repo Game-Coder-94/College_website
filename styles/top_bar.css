@@ -44,3 +44,16 @@
     font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+
+.topbar img:hover {
+    animation: vibrateZoomRotate 0.5s ease-in-out;
+}
+
+@keyframes vibrateZoomRotate {
+    0% { transform: scale(1) rotate(0deg) translate(0); }
+    20% { transform: scale(1.05) rotate(-2deg) translate(-1px, 1px); }
+    40% { transform: scale(1.1) rotate(2deg) translate(1px, -1px); }
+    60% { transform: scale(1.05) rotate(-2deg) translate(-1px, -1px); }
+    80% { transform: scale(1.1) rotate(2deg) translate(1px, 1px); }
+    100% { transform: scale(1) rotate(0deg) translate(0); }
+}
