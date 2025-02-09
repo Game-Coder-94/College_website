@@ -8,35 +8,9 @@ html {
     height: 100%;
 }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    /* Vertically centers items */
-    justify-content: center;
-    /* Centers everything inside */
-    background-color: #0082fc;
-    color: white;
-    padding: 10px 20px;
-    opacity: 75%;
-    position: relative;
-}
-
-.topbar img {
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    /* Space between image and text */
-}
-
-.topbar h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
 .main {
     margin: 0;
-    padding: 20px;
-    padding-left: 60px;
+    padding: 90px 0px 0px 0px;
     background-image: url(data/bg.jpg);
     background-attachment: fixed;
     background-position: center;
