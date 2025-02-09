@@ -1,0 +1,46 @@
+/* Top-bar format */
+/*
+<div class="topbar">
+    <img src="data/college_logo.jpg" alt="Logo">
+    <h1>St. Vincent Pallotti College of Engineering</h1>
+</div> 
+*/
+
+
+/* Top Bar with Glass Effect */
+.topbar {
+    position: fixed; /* Fixed to stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 100; /* Ensures it's above sidebar */
+}
+
+/* Topbar Logo - Always visible */
+.topbar img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    z-index: 101; /* Ensures it stays above sidebar */
+    position: relative; /* Ensures it doesn't get hidden */
+}
+
+/* Title Centered */
+.topbar h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
