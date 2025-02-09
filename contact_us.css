@@ -1,83 +1,59 @@
-.topbar {
-    display: flex;
-    align-items: center; /* Vertically centers items */
-    justify-content: center; /* Centers everything inside */
-    background-color: #0082fc;
-    color: white;
-    padding: 10px 20px;
-    opacity: 75%;
-    position: relative;
-}
-
-.topbar img {
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px; /* Space between image and text */
-}
-
-.topbar h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.sidebar {
-    height: 100vh;
-    width: 60px; /* Collapsed width */
-    text-wrap: nowrap;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #333;
-    transition: width 0.3s ease; /* Smooth transition */
-    overflow: hidden; /* Hide overflow content */
-    position: fixed;
-    z-index: 99;
-}
-
-.sidebar:hover {
-    width: 200px; 
-}
-
-.sidebar a {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.3s;
-}
-
-.label {
-    padding-left: 15px;
-}
-
-.sidebar a:hover {
-    background-color: #0082fc;
-    z-index: 99;
-}
-
-.icon {
-    margin-right: 10px;
-    font-size: 20px;
+* {
+    box-sizing: border-box;
 }
 
 footer {
+    position: relative;
+    top: 150px;
+    height: 550px;
+    margin: 0;
     padding: 45px 35px 45px 60px;
+    box-sizing: border-box;
 }
 
-.contact-us-container {
+body {
     background-image: url(data/bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 40px 15px 40px 20px;
+    padding: 0;
 }
 
-.col-md-5 {
-    background: rgba(255, 255, 255, 0);
+.col-12 {
+    left: -25px;
+}
+
+.row {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.card-hover h4 {
+    font-size: 20px;
+}
+
+.quick-contact,
+.quick-address,
+.quick-links {
+    min-width: 200px;
+}
+
+.container-fluid,
+.contact-us-container,
+.contact-us-section,
+.py-5 {
+    position: relative;
+    top: 90px;
+    left: 30px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
 }
 
 .contact-us-panel {
     background: rgba(255, 255, 255, 0.3);
+    overflow: visible;
 }
 
 .card-hover:hover {
@@ -134,3 +110,11 @@ iframe {
     border: 0;
     border-radius: 15px;
 }
+
+/* @media (min-width: 200px){
+.col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+} */
