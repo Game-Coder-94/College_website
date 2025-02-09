@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mission.css">
-    <link rel="stylesheet" href="styles/side_bar.css">
     <title>About College</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/side_bar.css">
+    <link rel="stylesheet" href="styles/top_bar.css">
+    <link rel="stylesheet" href="styles/scroll_bar.css">
+    <link rel="stylesheet" href="mission.css">
+    
+    <!-- Scripts -->
+    <script src="scripts/loader.js"></script>
 </head>
+
 <body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Top Bar -->
     <div class="topbar">
-        <img src="data/college_logo.jpg" alt="Logo">
+        <img src="data/college_logo.jpg" alt="College Logo">
         <h1>St. Vincent Pallotti College of Engineering and Technology</h1>
     </div>
 
+    <!-- Sidebar Navigation -->
     <div class="sidebar">
         <a href="home.html"><span class="icon">🏠</span><span class="label">Home</span></a>
         <a href="about_college.html"><span class="icon">🎓</span><span class="label">About College</span></a>
@@ -26,18 +47,25 @@
         <a href="contact_us.html"><span class="icon">📞</span><span class="label">Contact Us</span></a>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
         <div class="main">
             <h1 style="text-align: center;">College Vision and Mission</h1>
+            
             <div class="container">
                 <div class="section">
                     <h2>Vision</h2>
-                    <p>To develop a knowledge based society with clarity of thoughts and charity at hearts to serve humanity with integrity.</p>
+                    <p>To develop a knowledge-based society with clarity of thought and charity at heart to serve humanity with integrity.</p>
                 </div>
+
                 <div class="section">
                     <h2>Mission</h2>
-                    <p>To empower youth to be technocrats of tomorrow with absolute discipline, quest for knowledge and strong ethos to uphold the spirit of professionalism.</p>
+                    <p>To empower youth to be technocrats of tomorrow with absolute discipline, a quest for knowledge, and strong ethos to uphold the spirit of professionalism.</p>
                 </div>
             </div>
-    </body>
+        </div>
+    </div>
+
+</body>
+
 </html>
