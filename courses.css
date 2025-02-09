@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("data/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    top: 80px;
+    background: rgba(255, 255, 255, 0.15); /* Glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+.courses:hover {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.3), rgba(0, 210, 255, 0.3));
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.courses h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.courses li:hover {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.5), rgba(0, 210, 255, 0.5));
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
