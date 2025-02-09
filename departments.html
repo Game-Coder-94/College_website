@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="departments.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/scroll_bar.css">
     <link rel="stylesheet" href="styles/side_bar.css">
+    <link rel="stylesheet" href="styles/top_bar.css">
+    <link rel="stylesheet" href="departments.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/loader.js"></script>
+
     <title>Departments</title>
 </head>
+
 <body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <img src="data/college_logo.jpg" alt="College Logo">
+        <h1>St. Vincent Pallotti College of Engineering</h1>
+    </div>
+
+    <!-- Sidebar -->
     <div class="sidebar">
         <a href="home.html"><span class="icon">🏠</span><span class="label">Home</span></a>
         <a href="about_college.html"><span class="icon">🎓</span><span class="label">About College</span></a>
@@ -21,97 +48,114 @@
         <a href="contact_us.html"><span class="icon">📞</span><span class="label">Contact Us</span></a>
     </div>
 
-        <main class="main">
-            <h2>Engineering Branches</h2>
-            <section class="cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Civil Engineering">
-                    <div class="card-content">
-                        <h3>Civil Engineering</h3>
-                        <p>Civil engineers build the world’s infrastructure, quietly shaping the history of nations around the world.</p>
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Engineering Branches</h2>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Computer Engineering">
-                    <div class="card-content">
-                        <h3>Computer Engineering</h3>
-                        <p>Blending computer science and electrical engineering to advance digital technology.</p>
-                    </div>
-                </div>
+        <section class="cards">
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Electronics & Telecommunication">
-                    <div class="card-content">
-                        <h3>Electronics & Telecommunication</h3>
-                        <p>Combining two major branches of engineering for cutting-edge communication systems.</p>
-                    </div>
+            <!-- Civil Engineering -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Civil Engineering">
+                <div class="card-content">
+                    <h3>Civil Engineering</h3>
+                    <p>Civil engineers build the world’s infrastructure, quietly shaping the history of nations around the world.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Electrical Engineering">
-                    <div class="card-content">
-                        <h3>Electrical Engineering</h3>
-                        <p>Focused on the study and application of electricity and electronics in diverse fields.</p>
-                    </div>
+            <!-- Computer Engineering -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Computer Engineering">
+                <div class="card-content">
+                    <h3>Computer Engineering</h3>
+                    <p>Blending computer science and electrical engineering to advance digital technology.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Information Technology">
-                    <div class="card-content">
-                        <h3>Information Technology</h3>
-                        <p>Established in 2014, pioneering advancements in IT and software development.</p>
-                    </div>
+            <!-- Electronics & Telecommunication -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Electronics & Telecommunication">
+                <div class="card-content">
+                    <h3>Electronics & Telecommunication</h3>
+                    <p>Combining two major branches of engineering for cutting-edge communication systems.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Mechanical Engineering">
-                    <div class="card-content">
-                        <h3>Mechanical Engineering</h3>
-                        <p>The evergreen branch evolving from ancient tools to modern machinery.</p>
-                    </div>
+            <!-- Electrical Engineering -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Electrical Engineering">
+                <div class="card-content">
+                    <h3>Electrical Engineering</h3>
+                    <p>Focused on the study and application of electricity and electronics in diverse fields.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Artificial Intelligence">
-                    <div class="card-content">
-                        <h3>Artificial Intelligence</h3>
-                        <p>Creating intelligent machines capable of performing tasks that require human intelligence.</p>
-                    </div>
+            <!-- Information Technology -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Information Technology">
+                <div class="card-content">
+                    <h3>Information Technology</h3>
+                    <p>Established in 2014, pioneering advancements in IT and software development.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Data Science">
-                    <div class="card-content">
-                        <h3>Computer Science & Engineering (Data Science)</h3>
-                        <p>Combines computer science, statistics, and data analytics to extract meaningful insights.</p>
-                    </div>
+            <!-- Mechanical Engineering -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Mechanical Engineering">
+                <div class="card-content">
+                    <h3>Mechanical Engineering</h3>
+                    <p>The evergreen branch evolving from ancient tools to modern machinery.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Cyber Security">
-                    <div class="card-content">
-                        <h3>Computer Science & Engineering (Cyber Security)</h3>
-                        <p>A multidisciplinary approach to data security and analytics.</p>
-                    </div>
+            <!-- Artificial Intelligence -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Artificial Intelligence">
+                <div class="card-content">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Creating intelligent machines capable of performing tasks that require human intelligence.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="Industrial IOT">
-                    <div class="card-content">
-                        <h3>Industrial IOT</h3>
-                        <p>Revolutionizing industries with IoT technology to improve efficiency and business outcomes.</p>
-                    </div>
+            <!-- Data Science -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Data Science">
+                <div class="card-content">
+                    <h3>Computer Science & Engineering (Data Science)</h3>
+                    <p>Combines computer science, statistics, and data analytics to extract meaningful insights.</p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" alt="CSBS">
-                    <div class="card-content">
-                        <h3>Computer Science and Business Systems (TCS)</h3>
-                        <p>In partnership with TCS, bridging computer science with business systems.</p>
-                    </div>
+            <!-- Cyber Security -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Cyber Security">
+                <div class="card-content">
+                    <h3>Computer Science & Engineering (Cyber Security)</h3>
+                    <p>A multidisciplinary approach to data security and analytics.</p>
                 </div>
-            </section>
+            </div>
+
+            <!-- Industrial IoT -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Industrial IoT">
+                <div class="card-content">
+                    <h3>Industrial IoT</h3>
+                    <p>Revolutionizing industries with IoT technology to improve efficiency and business outcomes.</p>
+                </div>
+            </div>
+
+            <!-- CSBS -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="CSBS">
+                <div class="card-content">
+                    <h3>Computer Science and Business Systems (TCS)</h3>
+                    <p>In partnership with TCS, bridging computer science with business systems.</p>
+                </div>
+            </div>
+
+        </section>
     </div>
+
 </body>
+
 </html>
